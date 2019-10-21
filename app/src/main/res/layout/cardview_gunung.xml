@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardview_gunung"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_marginLeft="8dp"
+    android:layout_marginTop="4dp"
+    android:layout_marginRight="8dp"
+    android:layout_marginBottom="4dp"
+    card_view:cardCornerRadius="4dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@color/layout_background"
+        android:padding="8dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/img_item_gambar"
+            android:layout_width="150dp"
+            android:layout_height="180dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:src="@android:color/darker_gray" />
+
+        <TextView
+            android:id="@+id/tv_item_nama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_toEndOf="@id/img_item_gambar"
+            android:layout_toRightOf="@id/img_item_gambar"
+            android:textColor="@color/colorText"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:text="@string/nama_gunung" />
+
+        <TextView
+            android:id="@+id/tv_item_tinggi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="8dp"
+            android:layout_toEndOf="@id/img_item_gambar"
+            android:layout_toRightOf="@id/img_item_gambar"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="@string/tinggi"
+            android:textColor="@color/colorText" />
+        <TextView
+            android:id="@+id/tv_item_lokasi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="8dp"
+            android:layout_toEndOf="@id/img_item_gambar"
+            android:layout_toRightOf="@id/img_item_gambar"
+            android:textColor="@color/colorText"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="@string/lokasi" />
+
+        <LinearLayout
+            android:id="@+id/tombol"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_below="@+id/tv_item_lokasi"
+            android:layout_toEndOf="@id/img_item_gambar"
+            android:layout_toRightOf="@id/img_item_gambar"
+            android:orientation="vertical">
+            <Button
+                android:id="@+id/tmbl_suka"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:layout_weight="1"
+                android:text="@string/tmblsuka"
+                />
+            <Button
+                android:id="@+id/tmbl_bagikan"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:layout_weight="1"
+                android:text="@string/tmblbagikan"
+                />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

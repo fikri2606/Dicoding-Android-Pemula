@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">GunungDiIndonesia</string>
+    <string name="nama_gunung">nama gunung</string>
+    <string name="detail">detail</string>
+    <string name="lokasi">lokasi</string>
+    <string name="tinggi">tinggi</string>
+    <string name="tmblsuka">suka</string>
+    <string name="tmblbagikan">bagikan</string>
+    <string name="profil">profil</string>
+    <string name="username">\'\'Wynn\'\'</string>
+    <string name="nama_lengkap">Fikri Eka Putra</string>
+    <string name="email">cattupai@gmail.com</string>
+</resources>

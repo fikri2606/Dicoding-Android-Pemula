@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tv_detail_gunung"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="16dp">
+
+    <RelativeLayout
+        android:id="@+id/dtlgng"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:background="@color/layout_background"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/img_item_gambar1"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_height="250dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="30dp"
+            android:src="@android:color/darker_gray" />
+
+        <TextView
+            android:id="@+id/nGunung"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="6dp"
+            android:layout_below="@+id/img_item_gambar1"
+            android:textColor="@color/colorText"
+            android:ellipsize="end"
+            android:text="Nama Gunung" />
+        <TextView
+            android:id="@+id/tv_item_nama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="16dp"
+            android:layout_below="@+id/nGunung"
+            android:textColor="@color/colorText"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:text="@string/nama_gunung" />
+
+        <TextView
+            android:id="@+id/lGunung"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="6dp"
+            android:layout_below="@+id/tv_item_nama"
+            android:textColor="@color/colorText"
+            android:ellipsize="end"
+            android:text="Lokasi" />
+        <TextView
+            android:id="@+id/tv_item_lokasi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="16dp"
+            android:layout_below="@+id/lGunung"
+            android:textColor="@color/colorText"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:text="@string/lokasi" />
+
+        <TextView
+            android:id="@+id/tGunung"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="6dp"
+            android:layout_below="@+id/tv_item_lokasi"
+            android:textColor="@color/colorText"
+            android:ellipsize="end"
+            android:text="Ketinggian" />
+        <TextView
+            android:id="@+id/tv_item_tinggi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="16dp"
+            android:layout_below="@+id/tGunung"
+            android:textColor="@color/colorText"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:text="@string/tinggi" />
+
+        <TextView
+            android:id="@+id/dGunung"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="6dp"
+            android:layout_below="@+id/tv_item_tinggi"
+            android:textColor="@color/colorText"
+            android:ellipsize="end"
+            android:text="Penjelasan" />
+        <TextView
+            android:id="@+id/tv_item_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorText"
+            android:layout_below="@+id/dGunung"
+            android:ellipsize="end"
+            android:textStyle="bold"
+            android:text="@string/detail"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"/>
+
+    </RelativeLayout>
+</ScrollView>
